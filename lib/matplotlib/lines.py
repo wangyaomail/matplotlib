@@ -647,6 +647,7 @@ class Line2D(Artist):
         else:
             x, y = args
 
+        # 注意这里的调用是在xdata和ydata上的，这个set_data在各个图形间并不通用
         self.set_xdata(x)
         self.set_ydata(y)
 
